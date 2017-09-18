@@ -1,0 +1,535 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" currentTimeline="1" xflVersion="2.6" creatorInfo="Adobe Flash Professional CC" platform="Windows" versionInfo="Saved by Adobe Flash Windows 15.0 build 179" majorVersion="15" buildNumber="179" nextSceneIdentifier="2" viewOptionsPasteBoardView="false" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F">
+     <folders>
+          <DOMFolderItem name="gameScreenbg.ai Assets" itemID="56fecd31-0000012c"/>
+          <DOMFolderItem name="gameScreenbg.ai Assets/Layer 1" itemID="56fecd31-0000012d" isExpanded="true"/>
+          <DOMFolderItem name="scbg.ai Assets" itemID="56fed229-00000152"/>
+          <DOMFolderItem name="scbg.ai Assets_0" itemID="56fed286-0000015a"/>
+          <DOMFolderItem name="scbg.ai Assets_0/Layer 1" itemID="56fed286-0000015b" isExpanded="true"/>
+          <DOMFolderItem name="scbg.ai Assets_1" itemID="56fed2e0-00000162"/>
+          <DOMFolderItem name="scbg.ai Assets_1/Layer 1" itemID="56fed2e0-00000163" isExpanded="true"/>
+          <DOMFolderItem name="scbg.ai Assets_2" itemID="56fed326-0000016a"/>
+          <DOMFolderItem name="scbg.ai Assets_2/Layer 1" itemID="56fed326-0000016b" isExpanded="true"/>
+          <DOMFolderItem name="scbg.ai Assets/Layer 1" itemID="56fed229-00000153"/>
+     </folders>
+     <media>
+          <DOMBitmapItem name="gameScreenbg.ai Assets/Layer 1/&lt;Image&gt;" itemID="56fecd31-00000130" sourceLastImported="1459539249" allowSmoothing="true" originalCompressionType="lossless" quality="50" href="gameScreenbg.ai Assets/Layer 1/&amp;#060Image&amp;#062" bitmapDataHRef="M 3 1459539249.dat" frameRight="40800" frameBottom="15360"/>
+          <DOMBitmapItem name="scbg.ai Assets/Layer 1/&lt;Image&gt;" itemID="56fed229-00000156" sourceLastImported="1459540521" allowSmoothing="true" originalCompressionType="lossless" quality="50" href="scbg.ai Assets/Layer 1/&amp;#060Image&amp;#062" bitmapDataHRef="M 7 1459540521.dat" frameRight="12000" frameBottom="6760"/>
+          <DOMBitmapItem name="scbg.ai Assets_0/Layer 1/&lt;Image&gt;" itemID="56fed286-0000015e" sourceLastImported="1459540614" allowSmoothing="true" originalCompressionType="lossless" quality="50" href="scbg.ai Assets_0/Layer 1/&amp;#060Image&amp;#062" bitmapDataHRef="M 8 1459540614.dat" frameRight="12000" frameBottom="6760"/>
+          <DOMBitmapItem name="scbg.ai Assets_1/Layer 1/&lt;Image&gt;" itemID="56fed2e0-00000166" sourceLastImported="1459540704" allowSmoothing="true" originalCompressionType="lossless" quality="50" href="scbg.ai Assets_1/Layer 1/&amp;#060Image&amp;#062" bitmapDataHRef="M 9 1459540704.dat" frameRight="12000" frameBottom="6760"/>
+          <DOMBitmapItem name="scbg.ai Assets_2/Layer 1/&lt;Image&gt;" itemID="56fed326-0000016e" sourceLastImported="1459540774" allowSmoothing="true" originalCompressionType="lossless" quality="50" href="scbg.ai Assets_2/Layer 1/&amp;#060Image&amp;#062" bitmapDataHRef="M 10 1459540774.dat" frameRight="12000" frameBottom="6760"/>
+          <DOMSoundItem name="gamebgSound" itemID="5702ad5d-00000155" linkageExportForAS="true" linkageClassName="gamebgSound" sourceExternalFilepath="./POL-illusion-castle-short.wav" sourceLastImported="1459793245" externalFileCRC32="3478042174" externalFileSize="651888" href="gamebgSound.wav" soundDataHRef="M 8 1459793217.dat" format="22kHz 16bit Stereo" sampleCount="325662" dataLength="1302648"/>
+          <DOMSoundItem name="mainMenuSound" itemID="5702aeb0-00000161" linkageExportForAS="true" linkageClassName="mainMenuSound" sourceExternalFilepath="./Europe - The Final Countdown (Official Video).mp3" sourceLastImported="1459793584" externalFileCRC32="4041209930" externalFileSize="7096634" href="mainMenuSound.mp3" soundDataHRef="M 9 1459793569.dat" format="44kHz 16bit Stereo" sampleCount="13040640" exportFormat="1" exportBits="7" dataLength="7096476" exportNative="true" cacheFormat="5kHz 8bit Stereo" cachedSampleCount="1630080"/>
+          <DOMSoundItem name="startButtonClickSound" itemID="5702aa93-0000014e" linkageExportForAS="true" linkageClassName="startButtonClickSound" sourceExternalFilepath="./startButtonClick.mp3" sourceLastImported="1459792531" externalFileCRC32="113389279" externalFileSize="4981" href="startButtonClickSound.mp3" soundDataHRef="M 7 1459792341.dat" format="44kHz 16bit Stereo" sampleCount="12672" exportFormat="1" exportBits="7" dataLength="4725" exportNative="true" cacheFormat="5kHz 8bit Stereo" cachedSampleCount="1584"/>
+     </media>
+     <symbols>
+          <Include href="gameScreenbg.xml" itemID="56fecd45-00000133" lastModified="1459539269"/>
+          <Include href="startButton.xml" itemID="56f84c21-0000014e" lastModified="1459797253"/>
+          <Include href="startScreenbgszx.xml" itemID="56fed330-00000170" lastModified="1460056219"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="Scene 1">
+               <layers>
+                    <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <Actionscript>
+                                        <script><![CDATA[import flash.events.MouseEvent;
+
+//This game is a fully randomize math game. The operators and numbers are random. 
+//Players must solve as many math problems as possible before timer runs out
+//players get 10pts per correct response
+//the higher the player points, the harder the math problems get
+//a message is displayed to player at end of game, message type depends on points earned
+//players are presented the option to start over
+
+//create a void method to start a new game, call method to begin game
+function startNewGame() : void {
+
+//create instances of game symbols for use in game
+var startScreen_mc:startScreenbgszx = new startScreenbgszx();
+var startButton_mc:startButton = new startButton();
+var gameScreen_mc:gameScreenbg = new gameScreenbg();
+
+//add startScreen instance and button instance to stage 
+addChild(startScreen_mc);
+addChild(startButton_mc);
+	
+//add background menu music using channel class to be able to stop later on
+	var myMenuSound:mainMenuSound = new mainMenuSound();
+	var myMenuChannel:SoundChannel = new SoundChannel();
+	var myMenuMusicTransform = new SoundTransform();
+	myMenuChannel = myMenuSound.play(13000, 3);
+	myMenuMusicTransform.volume = 0.5;
+	myMenuChannel.soundTransform = myMenuMusicTransform;
+	
+//alter position and size of child objects
+startScreen_mc.x = -5;
+startScreen_mc.y = -5;
+startScreen_mc.width = 560;
+startScreen_mc.height = 410;
+startButton_mc.x = 220;
+startButton_mc.y = 70;
+startButton_mc.width = 80;
+startButton_mc.height = 30;
+ 
+ //add mouse over event listener to startButton to add button glow effect
+startButton_mc.addEventListener(MouseEvent.MOUSE_OVER, startButtonGlow);  
+ 
+ //function to make glow filter and apply to startbutton on mouse over event
+ function startButtonGlow (e:MouseEvent){
+
+	 // Apply the glow filter to the startButton. 
+	var glow:GlowFilter = new GlowFilter(); 
+	glow.color = 0x009922; 
+	glow.alpha = 1; 
+	glow.blurX = 25; 
+	glow.blurY = 25; 
+	glow.quality = BitmapFilterQuality.HIGH;
+	startButton_mc.filters = [glow];
+
+ }
+
+ //add mouse out event listener to startButton to remove button glow effect
+startButton_mc.addEventListener(MouseEvent.MOUSE_OUT, startButtonUnGlow);  
+ 
+ 
+ //function to remove glow when mouse leaves button area
+ function startButtonUnGlow (e:MouseEvent){
+
+	// set filter to null to remove all filters from startButton
+	 startButton_mc.filters = null;
+
+ }
+		//check to see if the player is pressing the spacebar to restart gameplay
+		startButton_mc.addEventListener(MouseEvent.CLICK, startGamePlay); 
+		
+	//check to see if the player is pressing the spacebar to restart gameplay
+		startButton_mc.addEventListener(MouseEvent.CLICK, stopMainMenuSound);
+ 
+    //function to stop main menu sound before getting to gameplay 
+	function stopMainMenuSound(e:MouseEvent){
+			myMenuChannel.stop();
+	}
+ 
+     //if the player wants to restart the game
+	function startGamePlay(e:MouseEvent){
+			
+		//play sound upon click
+		var myclicksound:startButtonClickSound = new startButtonClickSound(); 
+		myclicksound.play();
+		
+		//make startScreen and startButton disappear
+		startScreen_mc.visible = false;
+		startButton_mc.visible = false;
+		
+		
+		//start gameplay background sound
+		
+		var myGameSound:gamebgSound = new gamebgSound();
+		var myGameChannel:SoundChannel = new SoundChannel();
+		var myGameMusicTransform = new SoundTransform();
+		myGameChannel = myGameSound.play(1000, 1000);
+		myGameMusicTransform.volume = 0.10;
+		myGameChannel.soundTransform = myGameMusicTransform;
+		
+		
+		//add the game screen and re size and position it
+		addChild(gameScreen_mc);
+		gameScreen_mc.x = -5;
+		gameScreen_mc.y = -5;
+		gameScreen_mc.width = 560;
+		gameScreen_mc.height = 410;
+	
+//create textfield textformatting
+var myTextFormat:TextFormat = new TextFormat();
+myTextFormat.font = "impact";
+myTextFormat.size = 40;
+myTextFormat.color = 0x000ff;
+myTextFormat.underline = false;
+
+var myUserInputFormat:TextFormat = new TextFormat();
+myUserInputFormat.font = "impact";
+myUserInputFormat.size = 40;
+myUserInputFormat.color = 0x000ff;
+myUserInputFormat.underline = false;
+
+var myPointsFormat:TextFormat = new TextFormat();
+myPointsFormat.font = "impact";
+myPointsFormat.size = 40;
+myPointsFormat.color = 0xFF0000;
+myPointsFormat.underline = false;
+
+var myMessageFormat:TextFormat = new TextFormat();
+myMessageFormat.font = "impact";
+myMessageFormat.size = 20;
+myMessageFormat.color = 0xFF0000;
+myMessageFormat.underline = false;
+myMessageFormat.align = TextFormatAlign.CENTER;
+
+var myclockLFormat:TextFormat = new TextFormat();
+myclockLFormat.font = "impact";
+myclockLFormat.size = 40;
+myclockLFormat.color = 0x215E38;
+myclockLFormat.underline = false;
+
+var mydirFormat:TextFormat = new TextFormat();
+mydirFormat.font = "impact";
+mydirFormat.size = 20;
+mydirFormat.color = 0x215E38;
+mydirFormat.underline = false;
+
+
+//start creating new text fields
+var number1:TextField = new TextField();
+number1.x = 100;
+number1.y = 150;
+number1.border = false;
+number1.autoSize = TextFieldAutoSize.CENTER;
+
+var mathOperator:TextField = new TextField();
+mathOperator.x = 150;
+mathOperator.y = 150;
+mathOperator.border = false;
+mathOperator.autoSize = TextFieldAutoSize.CENTER;
+
+var number2:TextField = new TextField();
+number2.x = 200;
+number2.y = 150;
+number2.border = false;
+number2.autoSize = TextFieldAutoSize.CENTER;
+
+var equalSign:TextField = new TextField();
+equalSign.x = 250;
+equalSign.y = 150;
+equalSign.border = false;
+equalSign.autoSize = TextFieldAutoSize.CENTER;
+
+var totalValue:TextField = new TextField();
+totalValue.x = 400;
+totalValue.y = 150;
+totalValue.border = false;
+totalValue.autoSize = TextFieldAutoSize.CENTER;
+
+var totalPoints:TextField = new TextField();
+totalPoints.x = 450;
+totalPoints.y = 75;
+totalPoints.border = false;
+totalPoints.autoSize = TextFieldAutoSize.CENTER;
+
+var pointsLabel:TextField = new TextField();
+pointsLabel.text = "Score: ";
+pointsLabel.x = 350;
+pointsLabel.y = 75;
+pointsLabel.border = false;
+pointsLabel.autoSize = TextFieldAutoSize.CENTER;
+
+var directionsLabel:TextField = new TextField();
+directionsLabel.text = "Press Enter To Submit Answer ";
+directionsLabel.x = 350;
+directionsLabel.y = 30;
+directionsLabel.border = false;
+directionsLabel.autoSize = TextFieldAutoSize.CENTER;
+
+var userMessage:TextField = new TextField();
+userMessage.x = 100;
+userMessage.y = 250;
+userMessage.width = 400;
+userMessage.height = 200;
+userMessage.border = false;
+userMessage.autoSize = TextFieldAutoSize.CENTER;
+userMessage.wordWrap = true;
+userMessage.defaultTextFormat = myMessageFormat;
+
+var restartMessage:TextField = new TextField();
+restartMessage.text = "Press spacebar to restart game";
+restartMessage.x = 210;
+restartMessage.y = 350;
+restartMessage.border = false;
+restartMessage.autoSize = TextFieldAutoSize.CENTER;
+
+var clock:TextField = new TextField();
+clock.x = 100;
+clock.y = 75;
+clock.border = false;
+clock.autoSize = TextFieldAutoSize.CENTER;
+
+var clockLabel:TextField = new TextField();
+clockLabel.text = "Time:";
+clockLabel.x = 30;
+clockLabel.y = 10;
+clockLabel.border = false;
+clockLabel.autoSize = TextFieldAutoSize.CENTER;
+
+var userInput:TextField = new TextField();
+userInput.x = 320;
+userInput.y = 150;
+userInput.border = true;
+userInput.width = 75;
+userInput.height =50;
+userInput.type = TextFieldType.INPUT;
+userInput.defaultTextFormat = myUserInputFormat;
+userInput.restrict = "0-9\.\\-\\";
+stage.focus = userInput;
+
+
+//initialize math variables
+var n1:int = Math.ceil(Math.random() *10);
+var n2:int = Math.ceil(Math.random() *10);
+var mOpRand:int = Math.ceil(Math.random() * 4);
+var mOp:String = "";
+var t:Number = 0;
+var uIn:String = "";
+var points:int = 0;
+
+//create a randomNumbers function to randomly select operator and to generate total
+//then assign values to textfields for display
+function randomNumbers(): void {
+	
+mOpRand = Math.ceil(Math.random() * 4);
+	
+switch(mOpRand){
+		    case 0:
+			mOp = "+"
+			t = (n1 + n2);
+			break;
+		
+			case 1:
+			mOp = "-"
+			t = n1 - n2;
+			break;
+			
+			case 2:
+			mOp = "X"
+			t = n1 * n2;
+			break;
+			
+			case 3:
+			mOp = "/"
+			t = n1 / n2;
+			break;
+			
+			default:
+			mOp = "+"
+			t = n1 + n2;
+			break;
+}//end switch 
+
+//assign values to text fields
+number1.text = n1.toString();
+number2.text = n2.toString();
+mathOperator.text = mOp;
+equalSign.text = "=";
+totalValue.text = t.toFixed(2).toString();
+totalPoints.text = points.toString();
+
+}//end randomNumbers function
+
+//call the randomNumbers function to get initial math problem
+randomNumbers();
+
+
+//create and start a clock & timer event
+
+var timeRemaining:int = 20; // start with 20 seconds, increase by 10 for every correct response - 180 = 3 minute timer
+
+clock.text = formatTimeRemaining();
+
+var myTimer : Timer = new Timer (1000);
+myTimer.addEventListener (TimerEvent.TIMER, onTimer);
+myTimer.start();
+
+//decrement clock, if timeremaining is 0, go to endGame function
+function onTimer ( e:TimerEvent ) : void {
+    timeRemaining--;
+    if (timeRemaining < 0) {
+        timeRemaining = 0;
+        endGame();
+    }
+    else 
+        clock.text = formatTimeRemaining ();
+		clock.setTextFormat(myPointsFormat);
+} // end onTimer function
+
+//function to format the clock in minutes and seconds
+function formatTimeRemaining () : String {
+    var mins : int = int (timeRemaining / 60);
+    var minstr : String = mins < 10 ? "0"+mins : ""+mins;
+    var secs : int = timeRemaining % 60;
+    var secstr : String = secs < 10 ? "0"+secs : ""+secs;
+
+    return minstr+":"+secstr;
+	clock.setTextFormat(myPointsFormat);
+	
+} //end formatTimeRemaining function
+
+//function  called on when game ends, displays message to user
+//different message depending on points achieved
+function endGame () : void {
+	myGameChannel.stop();
+    myTimer.stop(); //stop timer
+	userInput.type = TextFieldType.DYNAMIC; //disable userinput field
+	
+	if (points < 100){
+		    userMessage.text = "Game Over. Good try though, better luck next time!";
+		} else if ( points >= 100 && points < 200){
+			userMessage.text = "Game Over. Good job, let's try even harder next time!";
+		}else if ( points >= 200 && points < 300){
+			userMessage.text = "Game Over. You are amazing, let's play again and aim higher!";
+		}else if ( points >= 300 && points < 400){
+			 userMessage.text = "Game Over. You are on a roll, there is just no stopping you is there? Let's play again to become even greater!";
+		}else {
+			 userMessage.text = "Game Over. You are so good you could be Mensa material! You have done above and beyond expectations!";
+		}	
+		
+		//add the message to the stage prompting user to press enter to replay game
+		addChild(restartMessage);
+		
+		//check to see if the player is pressing the spacebar to restart gameplay
+		stage.addEventListener(KeyboardEvent.KEY_DOWN, restartGame); 
+		
+    //if the player wants to restart the game
+	function restartGame(e:KeyboardEvent){
+	
+	//check to see if keyCode for spacebar was pressed	
+    if (e.keyCode==32 ) {
+		//reset textfield messages and variables for game restart
+		userMessage.text = "";
+		restartMessage.text = "+";
+		timeRemaining = 180;
+		points = 0;
+		totalPoints.text = points.toString();
+		totalPoints.setTextFormat(myPointsFormat);
+		userInput.type = TextFieldType.INPUT;
+		
+		startNewGame();
+		
+	}
+	}
+    clock.text = formatTimeRemaining() + (" Time's Up!");
+}//end endGame function
+
+//check to see if the enter key was pressed, if so generate new numbers
+stage.addEventListener(KeyboardEvent.KEY_DOWN, generateNumbers);       
+
+function generateNumbers(e:KeyboardEvent){
+    if (e.keyCode==13 && timeRemaining !=0) {
+		
+		//check to see if user input is a number then check to see if it is correct
+		if(isNaN(Number(userInput.text))){
+			
+			userMessage.text = "Enter Numbers Only!";
+		} else if(Number(userInput.text) == Number(totalValue.text)){
+			points = points + 10; //increase points by 10 if correct answer
+			timeRemaining = timeRemaining + 10;
+		    userMessage.text = ("Correct! Answer is: ") +totalValue.text;
+		} else { userMessage.text = ("Wrong! Answer is: ") +totalValue.text;}
+		
+		//clear userInput text field
+		userInput.text = "";
+		
+		//increase range of math numbers depending on points
+		if (points < 100){
+			 n1 = Math.ceil(Math.random() *10);
+			 n2 = Math.ceil(Math.random() *10);
+		} else if ( points >= 100 && points < 200){
+			 n1 = Math.ceil(Math.random() *20);
+			 n2 = Math.ceil(Math.random() *10);
+		}else if ( points >= 200 && points < 300){
+			 n1 = Math.ceil(Math.random() *30);
+			 n2 = Math.ceil(Math.random() *10);
+		}else if ( points >= 300 && points < 400){
+			 n1 = Math.ceil(Math.random() *40);
+			 n2 = Math.ceil(Math.random() *20);
+		}else {
+			 n1 = Math.ceil(Math.random() *50);
+			 n2 = Math.ceil(Math.random() *30);
+		}
+		
+	//call randomNumbers() Method to generate new math problem
+	randomNumbers();
+
+	//re-assign dynamic variables the textformat
+	number1.setTextFormat(myTextFormat);
+	number2.setTextFormat(myTextFormat);
+	mathOperator.setTextFormat(myTextFormat);
+	totalValue.setTextFormat(myTextFormat);
+	totalPoints.setTextFormat(myPointsFormat);
+	clock.setTextFormat(myPointsFormat);
+	
+	} //end if enter key was pressed
+	
+}//end generateNumbers function
+	
+//initially assign variables the textformat
+number1.setTextFormat(myTextFormat);
+number2.setTextFormat(myTextFormat);
+mathOperator.setTextFormat(myTextFormat);
+equalSign.setTextFormat(myTextFormat);
+totalValue.setTextFormat(myTextFormat);
+totalPoints.setTextFormat(myPointsFormat);
+pointsLabel.setTextFormat(myclockLFormat);
+clock.setTextFormat(myPointsFormat);
+clockLabel.setTextFormat(myclockLFormat);
+restartMessage.setTextFormat(myclockLFormat);
+userMessage.setTextFormat(myMessageFormat);
+directionsLabel.setTextFormat(mydirFormat);
+	
+//add variable children to stage
+addChild(number1);
+addChild(number2);
+addChild(mathOperator);
+addChild(equalSign);
+addChild(userInput);
+addChild(totalPoints);
+addChild(pointsLabel);
+addChild(clock);
+addChild(clockLabel);
+addChild(userMessage);
+addChild(directionsLabel);
+
+
+	}//end function startGamePlay
+}//end function startNewGame
+
+//call startNewGame function to begin initial game play
+startNewGame();
+
+
+
+
+
+
+
+]]></script>
+                                   </Actionscript>
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <PrinterSettings/>
+     <publishHistory>
+          <PublishItem publishSize="742731" publishTime="1460056227"/>
+          <PublishItem publishSize="736446" publishTime="1460055992"/>
+          <PublishItem publishSize="742558" publishTime="1460055881"/>
+          <PublishItem publishSize="742558" publishTime="1460055861"/>
+          <PublishItem publishSize="742553" publishTime="1460055837"/>
+          <PublishItem publishSize="742553" publishTime="1460055832"/>
+          <PublishItem publishSize="742553" publishTime="1459969877"/>
+          <PublishItem publishSize="742553" publishTime="1459969844"/>
+          <PublishItem publishSize="742552" publishTime="1459969834"/>
+          <PublishItem publishSize="742546" publishTime="1459969809"/>
+          <PublishItem publishSize="742546" publishTime="1459969796"/>
+          <PublishItem publishSize="742546" publishTime="1459969785"/>
+          <PublishItem publishSize="742546" publishTime="1459969775"/>
+          <PublishItem publishSize="742546" publishTime="1459969566"/>
+          <PublishItem publishSize="742545" publishTime="1459969470"/>
+          <PublishItem publishSize="7247715" publishTime="1459969175"/>
+          <PublishItem publishSize="7247715" publishTime="1459969122"/>
+          <PublishItem publishSize="7247715" publishTime="1459969115"/>
+          <PublishItem publishSize="7247716" publishTime="1459969106"/>
+          <PublishItem publishSize="7247716" publishTime="1459969094"/>
+     </publishHistory>
+</DOMDocument>

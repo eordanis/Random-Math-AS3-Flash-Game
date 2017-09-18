@@ -1,0 +1,60 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="startScreenbgszx" itemID="56fed330-00000170" linkageExportForAS="true" linkageClassName="startScreenbgszx" lastModified="1460056219">
+  <timeline>
+    <DOMTimeline name="startScreenbgszx">
+      <layers>
+        <DOMLayer name="Layer 1" color="#0000FF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="scbg.ai Assets_2/Layer 1/&lt;Image&gt;">
+                  <matrix>
+                    <Matrix a="1.01998901367188" d="0.957321166992188"/>
+                  </matrix>
+                </DOMBitmapInstance>
+                <DOMStaticText left="-7.9" width="159.8" height="16.75" autoExpand="true" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="21.4" ty="221.7"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>OBJECTIVE:</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" lineSpacing="2.4" size="13.6" bitmapSize="272" face="LatinWide" fillColor="#C1BF41"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+                <DOMStaticText left="-122.35" width="388.7" height="26.1" autoExpand="true" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="258.6" ty="24.55"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>The Final Math Down</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" lineSpacing="7.95" size="21.2" bitmapSize="424" face="LatinWide" fillColor="#A5CD47"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+                <DOMStaticText width="597.95" height="88.05" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="-2" ty="235.5"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>         Solve as many math problems as you can before the timer runs out.&#xD;           For every correct answer you get 10 points and 10 more seconds on the clock.  &#xD;     Every 100 points increases the difficulty of the math questions. </characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" lineSpacing="2.85" size="16.3" face="Vani" fillColor="#33FF00"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
