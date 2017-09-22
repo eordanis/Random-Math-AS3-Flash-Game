@@ -4,8 +4,10 @@
 *****
 A randomized flash math game written in action scripts 3.0 in CS5
 *****
-Read the DOMDocument.xml to:
+Read the DOMDocument.xml to view:
 *****
-view list of assets for game, structure, and code written
+*****************************-list of assets for game
+*****************************-structure and architecture of program
+*****************************-written code
 *****
 ***//
